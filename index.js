@@ -103,6 +103,7 @@ showProjetDetail();
 const observerIntersectionAnimation = () =>{
     const sections = document.querySelectorAll('section');
     const skills = document.querySelectorAll('.skills, .bars');
+    
 
 
 
