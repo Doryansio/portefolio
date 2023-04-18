@@ -30,8 +30,8 @@ if(isset($_POST['envoyer'])) {
                     $Message=htmlentities($_POST['message'],ENT_QUOTES,"UTF-8");//htmlentities() converti tous les accents en entités HTML, ENT_QUOTES Convertit en + les guillemets doubles et les guillemets simples, en entités HTML
                     //en fin, on envoi le mail
                     if(mail($VotreAdresseMail,$Sujet,nl2br($Message),$Entetes)){//la fonction nl2br permet de conserver les sauts de ligne et la fonction base64_encode de conserver les accents dans le titre
-                        echo "Le mail à été envoyé avec succès!";
-                        header("location: ./index.html");
+                        echo "Le mail à été envoyé avec succès! Vous allez etre rediriger vers la page d'acceuil...";
+                        header("refresh:5; url=index.html");
                     } else {
                         echo "Une erreur est survenue, le mail n'a pas été envoyé";
                     }
