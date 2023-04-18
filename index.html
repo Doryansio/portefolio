@@ -631,19 +631,16 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quidem beatae amet expedita similique dolorum, quam ducimus mollitia, laudantium delectus iusto aspernatur hic, quaerat totam molestiae enim nisi eaque reprehenderit!</p>
                     </div>
 
-                    <form action="https://formsubmit.co/doryan.monrosepro@gmail.com.com" method="POST" class="form">
-                        <label for="firstname">
-                            <input type="text" name="Nom" id="Nom" placeholder="Nom" required>
-                        </label>
-                        <label for="lastname">
-                            <input type="text" name="Prenom" id="Prenom" placeholder="Prenom" required>
-                        </label>
-                        <label for="email">
-                            <input type="email" name="Nom" id="Nom" placeholder="Email">
-                        </label>
-                        <textarea name="message" id="message" placeholder="message"></textarea>
-                        <input type="submit" value="Envoyer" class="btn">
-                    </form>
+                    <form action="contact.php" method="POST" class="form">
+                        <form action="contact.php" method="post">
+                            Mail: <input type="text" name="mail" value="" />
+                            <br />
+                            Sujet: <input type="text" name="sujet" value="" />
+                            <br />
+                            Message: <textarea name="message" cols="40" rows="20"></textarea>
+                            <br />
+                            <input type="submit" name="envoyer" value="Envoyer" />
+                        </form>
 
                 </div>
             </section>
