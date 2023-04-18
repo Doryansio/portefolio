@@ -1,7 +1,7 @@
 /* variables css en vu d'un dark mode en JS*/
 :root{
     --color-body:#000000;
-    --background-body:#FFF;
+    --background-body:#f1ebeb;
 }
 
 *{
@@ -235,6 +235,7 @@ section.title{
     nav .menu li {
         display: flex;
         justify-content: center;
+        
     }
 
     nav .menu a {
