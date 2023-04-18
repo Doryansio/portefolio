@@ -719,3 +719,7 @@ footer .socials a:hover{
       padding: 3rem;
     }
   }
+
+div.RedCadre {
+    border: solid 4px #ff0000;
+}
